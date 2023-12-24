@@ -4,7 +4,6 @@ go 1.17
 
 require (
 	github.com/adrg/sysfont v0.1.1
-	github.com/boombuler/barcode v1.0.0
 	github.com/gorilla/i18n v0.0.0-20150820051429-8b358169da46
 	github.com/stretchr/testify v1.7.1
 	github.com/trimmer-io/go-xmp v1.0.0
