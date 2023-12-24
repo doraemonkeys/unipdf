@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package fdf provides support for loading form field data from Form Field Data (FDF) files.
-package fdf ;import (_b "bufio";_cf "bytes";_fc "encoding/hex";_e "errors";_a "fmt";_ed "github.com/unidoc/unipdf/v3/common";_d "github.com/unidoc/unipdf/v3/core";_bf "io";_ff "os";_fa "regexp";_ef "sort";_ec "strconv";_c "strings";);func (_fbe *fdfParser )parseString ()(*_d .PdfObjectString ,error ){_fbe ._bbd .ReadByte ();
+package fdf ;import (_b "bufio";_cf "bytes";_fc "encoding/hex";_e "errors";_a "fmt";_ed "github.com/doraemonkeys/unipdf/v3/common";_d "github.com/doraemonkeys/unipdf/v3/core";_bf "io";_ff "os";_fa "regexp";_ef "sort";_ec "strconv";_c "strings";);func (_fbe *fdfParser )parseString ()(*_d .PdfObjectString ,error ){_fbe ._bbd .ReadByte ();
 var _eae _cf .Buffer ;_gb :=1;for {_geb ,_bfc :=_fbe ._bbd .Peek (1);if _bfc !=nil {return _d .MakeString (_eae .String ()),_bfc ;};if _geb [0]=='\\'{_fbe ._bbd .ReadByte ();_gbb ,_ffd :=_fbe ._bbd .ReadByte ();if _ffd !=nil {return _d .MakeString (_eae .String ()),_ffd ;
 };if _d .IsOctalDigit (_gbb ){_dbc ,_ecb :=_fbe ._bbd .Peek (2);if _ecb !=nil {return _d .MakeString (_eae .String ()),_ecb ;};var _aa []byte ;_aa =append (_aa ,_gbb );for _ ,_afe :=range _dbc {if _d .IsOctalDigit (_afe ){_aa =append (_aa ,_afe );}else {break ;
 };};_fbe ._bbd .Discard (len (_aa )-1);_ed .Log .Trace ("\u004e\u0075\u006d\u0065ri\u0063\u0020\u0073\u0074\u0072\u0069\u006e\u0067\u0020\u0022\u0025\u0073\u0022",_aa );_efc ,_ecb :=_ec .ParseUint (string (_aa ),8,32);if _ecb !=nil {return _d .MakeString (_eae .String ()),_ecb ;

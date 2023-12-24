@@ -14,7 +14,7 @@
 //
 // Package ps implements various functionalities needed for handling Postscript for PDF uses, in particular
 // for PDF function type 4.
-package ps ;import (_b "bufio";_e "bytes";_g "errors";_ce "fmt";_a "github.com/unidoc/unipdf/v3/common";_be "github.com/unidoc/unipdf/v3/core";_gc "io";_c "math";);func (_cadb *PSOperand )cvr (_ggg *PSStack )error {_fedb ,_aff :=_ggg .Pop ();if _aff !=nil {return _aff ;
+package ps ;import (_b "bufio";_e "bytes";_g "errors";_ce "fmt";_a "github.com/doraemonkeys/unipdf/v3/common";_be "github.com/doraemonkeys/unipdf/v3/core";_gc "io";_c "math";);func (_cadb *PSOperand )cvr (_ggg *PSStack )error {_fedb ,_aff :=_ggg .Pop ();if _aff !=nil {return _aff ;
 };if _bgg ,_cef :=_fedb .(*PSReal );_cef {_aff =_ggg .Push (MakeReal (_bgg .Val ));}else if _aeb ,_bcc :=_fedb .(*PSInteger );_bcc {_aff =_ggg .Push (MakeReal (float64 (_aeb .Val )));}else {return ErrTypeCheck ;};return _aff ;};var ErrUndefinedResult =_g .New ("\u0075\u006e\u0064\u0065fi\u006e\u0065\u0064\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0020\u0065\u0072\u0072o\u0072");
 func (_bbg *PSOperand )sub (_dbbd *PSStack )error {_fgg ,_eea :=_dbbd .Pop ();if _eea !=nil {return _eea ;};_becd ,_eea :=_dbbd .Pop ();if _eea !=nil {return _eea ;};_eabc ,_ddbg :=_fgg .(*PSReal );_gbd ,_ddaa :=_fgg .(*PSInteger );if !_ddbg &&!_ddaa {return ErrTypeCheck ;
 };_bed ,_gace :=_becd .(*PSReal );_dde ,_ade :=_becd .(*PSInteger );if !_gace &&!_ade {return ErrTypeCheck ;};if _ddaa &&_ade {_aegbg :=_dde .Val -_gbd .Val ;_fdab :=_dbbd .Push (MakeInteger (_aegbg ));return _fdab ;};var _dedb float64 =0;if _gace {_dedb =_bed .Val ;

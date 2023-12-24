@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package cmap ;import (_ba "bufio";_bd "bytes";_c "encoding/hex";_d "errors";_e "fmt";_dc "github.com/unidoc/unipdf/v3/common";_ged "github.com/unidoc/unipdf/v3/core";_gg "github.com/unidoc/unipdf/v3/internal/cmap/bcmaps";_ge "io";_gf "sort";_a "strconv";
+package cmap ;import (_ba "bufio";_bd "bytes";_c "encoding/hex";_d "errors";_e "fmt";_dc "github.com/doraemonkeys/unipdf/v3/common";_ged "github.com/doraemonkeys/unipdf/v3/core";_gg "github.com/doraemonkeys/unipdf/v3/internal/cmap/bcmaps";_ge "io";_gf "sort";_a "strconv";
 _ca "strings";_b "unicode/utf16";);func (cmap *CMap )toBfData ()string {if len (cmap ._cdc )==0{return "";};_eefa :=make ([]CharCode ,0,len (cmap ._cdc ));for _fgf :=range cmap ._cdc {_eefa =append (_eefa ,_fgf );};_gf .Slice (_eefa ,func (_ccb ,_bdd int )bool {return _eefa [_ccb ]< _eefa [_bdd ]});
 var _ggb []charRange ;_fbgc :=charRange {_eefa [0],_eefa [0]};_cag :=cmap ._cdc [_eefa [0]];for _ ,_cdcf :=range _eefa [1:]{_ae :=cmap ._cdc [_cdcf ];if _cdcf ==_fbgc ._ef +1&&_ebf (_ae )==_ebf (_cag )+1{_fbgc ._ef =_cdcf ;}else {_ggb =append (_ggb ,_fbgc );
 _fbgc ._ea ,_fbgc ._ef =_cdcf ,_cdcf ;};_cag =_ae ;};_ggb =append (_ggb ,_fbgc );var _egf []CharCode ;var _fgg []fbRange ;for _ ,_aac :=range _ggb {if _aac ._ea ==_aac ._ef {_egf =append (_egf ,_aac ._ea );}else {_fgg =append (_fgg ,fbRange {_ab :_aac ._ea ,_bda :_aac ._ef ,_bf :cmap ._cdc [_aac ._ea ]});

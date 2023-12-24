@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package ccittfax ;import (_g "errors";_b "github.com/unidoc/unipdf/v3/internal/bitwise";_ef "io";_d "math";);var (_bcg map[int ]code ;_aa map[int ]code ;_dge map[int ]code ;_bg map[int ]code ;_ed map[int ]code ;_ffg map[int ]byte ;_ca =code {Code :1<<4,BitsWritten :12};
+package ccittfax ;import (_g "errors";_b "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_ef "io";_d "math";);var (_bcg map[int ]code ;_aa map[int ]code ;_dge map[int ]code ;_bg map[int ]code ;_ed map[int ]code ;_ffg map[int ]byte ;_ca =code {Code :1<<4,BitsWritten :12};
 _ac =code {Code :3<<3,BitsWritten :13};_gcf =code {Code :2<<3,BitsWritten :13};_fb =code {Code :1<<12,BitsWritten :4};_fbe =code {Code :1<<13,BitsWritten :3};_ffc =code {Code :1<<15,BitsWritten :1};_fgg =code {Code :3<<13,BitsWritten :3};_egg =code {Code :3<<10,BitsWritten :6};
 _bf =code {Code :3<<9,BitsWritten :7};_caf =code {Code :2<<13,BitsWritten :3};_eab =code {Code :2<<10,BitsWritten :6};_afb =code {Code :2<<9,BitsWritten :7};);func init (){_gb =&treeNode {_fdg :true ,_ffgb :_a };_gbe =&treeNode {_ffgb :_ag ,_gdeg :_gb };
 _gbe ._ggfe =_gbe ;_bc =&tree {_acd :&treeNode {}};if _gg :=_bc .fillWithNode (12,0,_gbe );_gg !=nil {panic (_gg .Error ());};if _agf :=_bc .fillWithNode (12,1,_gb );_agf !=nil {panic (_agf .Error ());};_f =&tree {_acd :&treeNode {}};for _bb :=0;_bb < len (_df );

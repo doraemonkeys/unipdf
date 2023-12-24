@@ -10,8 +10,8 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package xmputil provides abstraction used by the pdf document XMP Metadata.
-package xmputil ;import (_f "errors";_cf "fmt";_c "github.com/trimmer-io/go-xmp/models/pdf";_ge "github.com/trimmer-io/go-xmp/models/xmp_mm";_b "github.com/trimmer-io/go-xmp/xmp";_a "github.com/unidoc/unipdf/v3/core";_ca "github.com/unidoc/unipdf/v3/internal/timeutils";
-_fe "github.com/unidoc/unipdf/v3/internal/uuid";_cg "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";_fd "github.com/unidoc/unipdf/v3/model/xmputil/pdfaid";_d "strconv";_g "time";);
+package xmputil ;import (_f "errors";_cf "fmt";_c "github.com/trimmer-io/go-xmp/models/pdf";_ge "github.com/trimmer-io/go-xmp/models/xmp_mm";_b "github.com/trimmer-io/go-xmp/xmp";_a "github.com/doraemonkeys/unipdf/v3/core";_ca "github.com/doraemonkeys/unipdf/v3/internal/timeutils";
+_fe "github.com/doraemonkeys/unipdf/v3/internal/uuid";_cg "github.com/doraemonkeys/unipdf/v3/model/xmputil/pdfaextension";_fd "github.com/doraemonkeys/unipdf/v3/model/xmputil/pdfaid";_d "strconv";_g "time";);
 
 // Marshal the document into xml byte stream.
 func (_ab *Document )Marshal ()([]byte ,error ){if _ab ._gf .IsDirty (){if _cfd :=_ab ._gf .SyncModels ();_cfd !=nil {return nil ,_cfd ;};};return _b .Marshal (_ab ._gf );};

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package security ;import (_adc "bytes";_aa "crypto/aes";_ce "crypto/cipher";_fc "crypto/md5";_cb "crypto/rand";_f "crypto/rc4";_a "crypto/sha256";_b "crypto/sha512";_de "encoding/binary";_ad "errors";_e "fmt";_df "github.com/unidoc/unipdf/v3/common";_d "hash";
+package security ;import (_adc "bytes";_aa "crypto/aes";_ce "crypto/cipher";_fc "crypto/md5";_cb "crypto/rand";_f "crypto/rc4";_a "crypto/sha256";_b "crypto/sha512";_de "encoding/binary";_ad "errors";_e "fmt";_df "github.com/doraemonkeys/unipdf/v3/common";_d "hash";
 _g "io";_ae "math";);func (stdHandlerR4 )paddedPass (_acd []byte )[]byte {_cgb :=make ([]byte ,32);_ee :=copy (_cgb ,_acd );for ;_ee < 32;_ee ++{_cgb [_ee ]=_fg [_ee -len (_acd )];};return _cgb ;};var _ StdHandler =stdHandlerR4 {};type stdHandlerR4 struct{Length int ;
 ID0 string ;};
 

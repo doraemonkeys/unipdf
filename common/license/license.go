@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package license helps manage commercial licenses and check if they are valid for the version of unipdf used.
-package license ;import _b "github.com/unidoc/unipdf/v3/internal/license";
+package license ;import _b "github.com/doraemonkeys/unipdf/v3/internal/license";
 
 // SetMeteredKeyPersistentCache sets the metered License API Key persistent cache.
 // Default value 'true', set to `false` will report the usage immediately to license server,

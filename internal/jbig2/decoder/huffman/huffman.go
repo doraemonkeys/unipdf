@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package huffman ;import (_df "errors";_db "fmt";_d "github.com/unidoc/unipdf/v3/internal/bitwise";_g "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_fd "math";_f "strings";);func _fg (_bb *Code )*OutOfBandNode {return &OutOfBandNode {}};var _ Node =&ValueNode {};
+package huffman ;import (_df "errors";_db "fmt";_d "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_g "github.com/doraemonkeys/unipdf/v3/internal/jbig2/internal";_fd "math";_f "strings";);func _fg (_bb *Code )*OutOfBandNode {return &OutOfBandNode {}};var _ Node =&ValueNode {};
 func (_cb *EncodedTable )RootNode ()*InternalNode {return _cb ._e };func GetStandardTable (number int )(Tabler ,error ){if number <=0||number > len (_gbd ){return nil ,_df .New ("\u0049n\u0064e\u0078\u0020\u006f\u0075\u0074 \u006f\u0066 \u0072\u0061\u006e\u0067\u0065");
 };_dgg :=_gbd [number -1];if _dgg ==nil {var _ebb error ;_dgg ,_ebb =_eccb (_bde [number -1]);if _ebb !=nil {return nil ,_ebb ;};_gbd [number -1]=_dgg ;};return _dgg ,nil ;};func NewCode (prefixLength ,rangeLength ,rangeLow int32 ,isLowerRange bool )*Code {return &Code {_fcc :prefixLength ,_dbf :rangeLength ,_acg :rangeLow ,_bfc :isLowerRange ,_fdb :-1};
 };type Tabler interface{Decode (_cgd *_d .Reader )(int64 ,error );InitTree (_gfb []*Code )error ;String ()string ;RootNode ()*InternalNode ;};func NewEncodedTable (table BasicTabler )(*EncodedTable ,error ){_eb :=&EncodedTable {_e :&InternalNode {},BasicTabler :table };

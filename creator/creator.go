@@ -14,9 +14,9 @@
 // It is built on top of the model package to provide access to the most common
 // operations such as creating text and image reports and manipulating existing pages.
 //
-package creator ;import (_ef "bytes";_f "encoding/xml";_e "errors";_g "fmt";_ab "github.com/gorilla/i18n/linebreak";_ff "github.com/unidoc/unichart/render";_eef "github.com/unidoc/unipdf/v3/common";_bd "github.com/unidoc/unipdf/v3/contentstream";_ce "github.com/unidoc/unipdf/v3/contentstream/draw";
-_ea "github.com/unidoc/unipdf/v3/core";_ga "github.com/unidoc/unipdf/v3/internal/graphic2d/svg";_ffe "github.com/unidoc/unipdf/v3/internal/integrations/unichart";_ae "github.com/unidoc/unipdf/v3/internal/license";_de "github.com/unidoc/unipdf/v3/internal/transform";
-_fa "github.com/unidoc/unipdf/v3/model";_b "golang.org/x/text/unicode/bidi";_cd "image";_dfd "io";_ec "math";_df "os";_ee "regexp";_d "sort";_a "strconv";_dc "strings";_cb "text/template";_efe "unicode";);func (_bdef *Image )rotatedSize ()(float64 ,float64 ){_bdgag :=_bdef ._gfef ;
+package creator ;import (_ef "bytes";_f "encoding/xml";_e "errors";_g "fmt";_ab "github.com/gorilla/i18n/linebreak";_ff "github.com/unidoc/unichart/render";_eef "github.com/doraemonkeys/unipdf/v3/common";_bd "github.com/doraemonkeys/unipdf/v3/contentstream";_ce "github.com/doraemonkeys/unipdf/v3/contentstream/draw";
+_ea "github.com/doraemonkeys/unipdf/v3/core";_ga "github.com/doraemonkeys/unipdf/v3/internal/graphic2d/svg";_ffe "github.com/doraemonkeys/unipdf/v3/internal/integrations/unichart";_ae "github.com/doraemonkeys/unipdf/v3/internal/license";_de "github.com/doraemonkeys/unipdf/v3/internal/transform";
+_fa "github.com/doraemonkeys/unipdf/v3/model";_b "golang.org/x/text/unicode/bidi";_cd "image";_dfd "io";_ec "math";_df "os";_ee "regexp";_d "sort";_a "strconv";_dc "strings";_cb "text/template";_efe "unicode";);func (_bdef *Image )rotatedSize ()(float64 ,float64 ){_bdgag :=_bdef ._gfef ;
 _bdgc :=_bdef ._ffab ;_cdbbd :=_bdef ._dgb ;if _cdbbd ==0{return _bdgag ,_bdgc ;};_fgdf :=_ce .Path {Points :[]_ce .Point {_ce .NewPoint (0,0).Rotate (_cdbbd ),_ce .NewPoint (_bdgag ,0).Rotate (_cdbbd ),_ce .NewPoint (0,_bdgc ).Rotate (_cdbbd ),_ce .NewPoint (_bdgag ,_bdgc ).Rotate (_cdbbd )}}.GetBoundingBox ();
 return _fgdf .Width ,_fgdf .Height ;};
 

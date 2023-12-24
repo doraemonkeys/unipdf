@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package mdp ;import (_b "errors";_d "fmt";_bd "github.com/unidoc/unipdf/v3/core";);type defaultDiffPolicy struct{_db map[int64 ]_bd .PdfObject ;_fe *DiffResults ;_c DocMDPPermission ;};
+package mdp ;import (_b "errors";_d "fmt";_bd "github.com/doraemonkeys/unipdf/v3/core";);type defaultDiffPolicy struct{_db map[int64 ]_bd .PdfObject ;_fe *DiffResults ;_c DocMDPPermission ;};
 
 // IsPermitted returns true if changes permitted.
 func (_dcf *DiffResults )IsPermitted ()bool {return len (_dcf .Errors )==0};func (_fce *defaultDiffPolicy )comparePages (_ae int ,_cad ,_fcg *_bd .PdfIndirectObject )error {if _ ,_ecab :=_fce ._db [_fcg .ObjectNumber ];_ecab {_fce ._fe .addErrorWithDescription (_ae ,"\u0050a\u0067e\u0073\u0020\u0077\u0065\u0072e\u0020\u0063h\u0061\u006e\u0067\u0065\u0064");

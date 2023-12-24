@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sigutil ;import (_e "bytes";_bc "crypto";_ge "crypto/x509";_dc "encoding/asn1";_ed "encoding/pem";_ac "errors";_d "fmt";_gee "github.com/unidoc/timestamp";_f "github.com/unidoc/unipdf/v3/common";_dg "golang.org/x/crypto/ocsp";_b "io";_ae "io/ioutil";
+package sigutil ;import (_e "bytes";_bc "crypto";_ge "crypto/x509";_dc "encoding/asn1";_ed "encoding/pem";_ac "errors";_d "fmt";_gee "github.com/unidoc/timestamp";_f "github.com/doraemonkeys/unipdf/v3/common";_dg "golang.org/x/crypto/ocsp";_b "io";_ae "io/ioutil";
 _be "net/http";_a "time";);
 
 // OCSPClient represents a OCSP (Online Certificate Status Protocol) client.

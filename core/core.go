@@ -12,9 +12,9 @@
 // Package core defines and implements the primitive PDF object types in golang, and provides functionality
 // for parsing those from a PDF file stream. This includes I/O handling, cross references, repairs, encryption,
 // encoding and other core capabilities.
-package core ;import (_ga "bufio";_fb "bytes";_fd "compress/lzw";_da "compress/zlib";_fe "crypto/md5";_aa "crypto/rand";_dc "encoding/hex";_f "errors";_daa "fmt";_ecd "github.com/unidoc/unipdf/v3/common";_fg "github.com/unidoc/unipdf/v3/core/security";
-_bc "github.com/unidoc/unipdf/v3/core/security/crypt";_cf "github.com/unidoc/unipdf/v3/internal/ccittfax";_fcf "github.com/unidoc/unipdf/v3/internal/imageutil";_eb "github.com/unidoc/unipdf/v3/internal/jbig2";_df "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";
-_ag "github.com/unidoc/unipdf/v3/internal/jbig2/decoder";_cb "github.com/unidoc/unipdf/v3/internal/jbig2/document";_cd "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_ce "github.com/unidoc/unipdf/v3/internal/strutils";_daf "golang.org/x/image/tiff/lzw";
+package core ;import (_ga "bufio";_fb "bytes";_fd "compress/lzw";_da "compress/zlib";_fe "crypto/md5";_aa "crypto/rand";_dc "encoding/hex";_f "errors";_daa "fmt";_ecd "github.com/doraemonkeys/unipdf/v3/common";_fg "github.com/doraemonkeys/unipdf/v3/core/security";
+_bc "github.com/doraemonkeys/unipdf/v3/core/security/crypt";_cf "github.com/doraemonkeys/unipdf/v3/internal/ccittfax";_fcf "github.com/doraemonkeys/unipdf/v3/internal/imageutil";_eb "github.com/doraemonkeys/unipdf/v3/internal/jbig2";_df "github.com/doraemonkeys/unipdf/v3/internal/jbig2/bitmap";
+_ag "github.com/doraemonkeys/unipdf/v3/internal/jbig2/decoder";_cb "github.com/doraemonkeys/unipdf/v3/internal/jbig2/document";_cd "github.com/doraemonkeys/unipdf/v3/internal/jbig2/errors";_ce "github.com/doraemonkeys/unipdf/v3/internal/strutils";_daf "golang.org/x/image/tiff/lzw";
 _aae "golang.org/x/xerrors";_ac "image";_ec "image/color";_bd "image/jpeg";_ae "io";_a "io/ioutil";_e "reflect";_fc "regexp";_db "sort";_bf "strconv";_c "strings";_d "sync";_g "time";_de "unicode";);
 
 // GetAccessPermissions returns the PDF access permissions as an AccessPermissions object.

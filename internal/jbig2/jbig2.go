@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package jbig2 ;import (_e "github.com/unidoc/unipdf/v3/internal/bitwise";_ef "github.com/unidoc/unipdf/v3/internal/jbig2/decoder";_ac "github.com/unidoc/unipdf/v3/internal/jbig2/document";_gb "github.com/unidoc/unipdf/v3/internal/jbig2/document/segments";
-_gc "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_a "sort";);func DecodeGlobals (encoded []byte )(Globals ,error ){const _ed ="\u0044\u0065\u0063\u006f\u0064\u0065\u0047\u006c\u006f\u0062\u0061\u006c\u0073";_gd :=_e .NewReader (encoded );_ga ,_aa :=_ac .DecodeDocument (_gd ,nil );
+package jbig2 ;import (_e "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_ef "github.com/doraemonkeys/unipdf/v3/internal/jbig2/decoder";_ac "github.com/doraemonkeys/unipdf/v3/internal/jbig2/document";_gb "github.com/doraemonkeys/unipdf/v3/internal/jbig2/document/segments";
+_gc "github.com/doraemonkeys/unipdf/v3/internal/jbig2/errors";_a "sort";);func DecodeGlobals (encoded []byte )(Globals ,error ){const _ed ="\u0044\u0065\u0063\u006f\u0064\u0065\u0047\u006c\u006f\u0062\u0061\u006c\u0073";_gd :=_e .NewReader (encoded );_ga ,_aa :=_ac .DecodeDocument (_gd ,nil );
 if _aa !=nil {return nil ,_gc .Wrap (_aa ,_ed ,"");};if _ga .GlobalSegments ==nil ||(_ga .GlobalSegments .Segments ==nil ){return nil ,_gc .Error (_ed ,"\u006eo\u0020\u0067\u006c\u006f\u0062\u0061\u006c\u0020\u0073\u0065\u0067m\u0065\u006e\u0074\u0073\u0020\u0066\u006f\u0075\u006e\u0064");
 };_ggc :=Globals {};for _ ,_ae :=range _ga .GlobalSegments .Segments {_ggc [int (_ae .SegmentNumber )]=_ae ;};return _ggc ,nil ;};type Globals map[int ]*_gb .Header ;func (_gaaf Globals )ToDocumentGlobals ()*_ac .Globals {if _gaaf ==nil {return nil ;};
 _ee :=[]*_gb .Header {};for _ ,_f :=range _gaaf {_ee =append (_ee ,_f );};_a .Slice (_ee ,func (_dc ,_gcg int )bool {return _ee [_dc ].SegmentNumber < _ee [_gcg ].SegmentNumber });return &_ac .Globals {Segments :_ee };};func DecodeBytes (encoded []byte ,parameters _ef .Parameters ,globals ...Globals )([]byte ,error ){var _b Globals ;

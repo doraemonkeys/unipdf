@@ -14,7 +14,7 @@
 // page content streams and XObject forms and thus also in annotation appearance streams.
 //
 // Also defines utility functions for drawing common shapes such as rectangles, lines and circles (ovals).
-package draw ;import (_ge "fmt";_a "github.com/unidoc/unipdf/v3/contentstream";_c "github.com/unidoc/unipdf/v3/core";_d "github.com/unidoc/unipdf/v3/internal/transform";_b "github.com/unidoc/unipdf/v3/model";_g "math";);
+package draw ;import (_ge "fmt";_a "github.com/doraemonkeys/unipdf/v3/contentstream";_c "github.com/doraemonkeys/unipdf/v3/core";_d "github.com/doraemonkeys/unipdf/v3/internal/transform";_b "github.com/doraemonkeys/unipdf/v3/model";_g "math";);
 
 // GetBounds returns the bounding box of the Bezier curve.
 func (_eg CubicBezierCurve )GetBounds ()_b .PdfRectangle {_ag :=_eg .P0 .X ;_ef :=_eg .P0 .X ;_ac :=_eg .P0 .Y ;_f :=_eg .P0 .Y ;for _ce :=0.0;_ce <=1.0;_ce +=0.001{Rx :=_eg .P0 .X *_g .Pow (1-_ce ,3)+_eg .P1 .X *3*_ce *_g .Pow (1-_ce ,2)+_eg .P2 .X *3*_g .Pow (_ce ,2)*(1-_ce )+_eg .P3 .X *_g .Pow (_ce ,3);

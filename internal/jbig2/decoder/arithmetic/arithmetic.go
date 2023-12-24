@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package arithmetic ;import (_ec "fmt";_b "github.com/unidoc/unipdf/v3/common";_ad "github.com/unidoc/unipdf/v3/internal/bitwise";_f "github.com/unidoc/unipdf/v3/internal/jbig2/internal";_d "io";_a "strings";);func (_fd *Decoder )DecodeBit (stats *DecoderStats )(int ,error ){var (_ba int ;
+package arithmetic ;import (_ec "fmt";_b "github.com/doraemonkeys/unipdf/v3/common";_ad "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_f "github.com/doraemonkeys/unipdf/v3/internal/jbig2/internal";_d "io";_a "strings";);func (_fd *Decoder )DecodeBit (stats *DecoderStats )(int ,error ){var (_ba int ;
 _fce =_be [stats .cx ()][0];_gg =int32 (stats .cx ()););defer func (){_fd ._g ++}();_fd ._c -=_fce ;if (_fd ._fc >>16)< uint64 (_fce ){_ba =_fd .lpsExchange (stats ,_gg ,_fce );if _da :=_fd .renormalize ();_da !=nil {return 0,_da ;};}else {_fd ._fc -=uint64 (_fce )<<16;
 if (_fd ._c &0x8000)==0{_ba =_fd .mpsExchange (stats ,_gg );if _bc :=_fd .renormalize ();_bc !=nil {return 0,_bc ;};}else {_ba =int (stats .getMps ());};};return _ba ,nil ;};func (_ggc *DecoderStats )Reset (){for _aag :=0;_aag < len (_ggc ._ddf );_aag ++{_ggc ._ddf [_aag ]=0;
 _ggc ._bd [_aag ]=0;};};type Decoder struct{ContextSize []uint32 ;ReferedToContextSize []uint32 ;_bef *_ad .Reader ;_aa uint8 ;_fc uint64 ;_c uint32 ;_af int64 ;_dc int32 ;_g int32 ;_fg int64 ;};func (_afe *DecoderStats )cx ()byte {return _afe ._ddf [_afe ._dff ]};

@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package docutil ;import (_d "errors";_c "fmt";_e "github.com/unidoc/unipdf/v3/common";_cg "github.com/unidoc/unipdf/v3/core";);func (_ggf *Catalog )NewOutputIntents ()*OutputIntents {return &OutputIntents {_cga :_ggf ._gc }};func (_cgf *Catalog )GetMetadata ()(*_cg .PdfObjectStream ,bool ){_gf ,_ga :=_cg .GetStream (_cgf .Object .Get ("\u004d\u0065\u0074\u0061\u0064\u0061\u0074\u0061"));
+package docutil ;import (_d "errors";_c "fmt";_e "github.com/doraemonkeys/unipdf/v3/common";_cg "github.com/doraemonkeys/unipdf/v3/core";);func (_ggf *Catalog )NewOutputIntents ()*OutputIntents {return &OutputIntents {_cga :_ggf ._gc }};func (_cgf *Catalog )GetMetadata ()(*_cg .PdfObjectStream ,bool ){_gf ,_ga :=_cg .GetStream (_cgf .Object .Get ("\u004d\u0065\u0074\u0061\u0064\u0061\u0074\u0061"));
 return _gf ,_ga ;};type Image struct{Name string ;Width int ;Height int ;Colorspace _cg .PdfObjectName ;ColorComponents int ;BitsPerComponent int ;SMask *ImageSMask ;Stream *_cg .PdfObjectStream ;};func (_cb *OutputIntents )Get (i int )(OutputIntent ,bool ){if _cb ._eg ==nil {return OutputIntent {},false ;
 };if i >=_cb ._eg .Len (){return OutputIntent {},false ;};_gce :=_cb ._eg .Get (i );_daf ,_af :=_cg .GetIndirect (_gce );if !_af {_gac ,_bde :=_cg .GetDict (_gce );return OutputIntent {Object :_gac },_bde ;};_feb ,_bef :=_cg .GetDict (_daf .PdfObject );
 return OutputIntent {Object :_feb },_bef ;};func (_bdg Page )GetResourcesXObject ()(*_cg .PdfObjectDictionary ,bool ){_df ,_dcb :=_bdg .GetResources ();if !_dcb {return nil ,false ;};return _cg .GetDict (_df .Get ("\u0058O\u0062\u006a\u0065\u0063\u0074"));

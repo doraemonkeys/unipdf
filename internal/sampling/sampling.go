@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package sampling ;import (_g "github.com/unidoc/unipdf/v3/internal/bitwise";_f "github.com/unidoc/unipdf/v3/internal/imageutil";_c "io";);func (_bgf *Writer )WriteSamples (samples []uint32 )error {for _dcg :=0;_dcg < len (samples );_dcg ++{if _ag :=_bgf .WriteSample (samples [_dcg ]);
+package sampling ;import (_g "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_f "github.com/doraemonkeys/unipdf/v3/internal/imageutil";_c "io";);func (_bgf *Writer )WriteSamples (samples []uint32 )error {for _dcg :=0;_dcg < len (samples );_dcg ++{if _ag :=_bgf .WriteSample (samples [_dcg ]);
 _ag !=nil {return _ag ;};};return nil ;};type SampleWriter interface{WriteSample (_ba uint32 )error ;WriteSamples (_bf []uint32 )error ;};type Writer struct{_af _f .ImageBase ;_gb *_g .Writer ;_cga ,_dfd int ;_add bool ;};func ResampleUint32 (data []uint32 ,bitsPerInputSample int ,bitsPerOutputSample int )[]uint32 {var _eea []uint32 ;
 _cg :=bitsPerOutputSample ;var _gee uint32 ;var _ac uint32 ;_cbfb :=0;_ad :=0;_dc :=0;for _dc < len (data ){if _cbfb > 0{_beb :=_cbfb ;if _cg < _beb {_beb =_cg ;};_gee =(_gee <<uint (_beb ))|(_ac >>uint (bitsPerInputSample -_beb ));_cbfb -=_beb ;if _cbfb > 0{_ac =_ac <<uint (_beb );
 }else {_ac =0;};_cg -=_beb ;if _cg ==0{_eea =append (_eea ,_gee );_cg =bitsPerOutputSample ;_gee =0;_ad ++;};}else {_ff :=data [_dc ];_dc ++;_ca :=bitsPerInputSample ;if _cg < _ca {_ca =_cg ;};_cbfb =bitsPerInputSample -_ca ;_gee =(_gee <<uint (_ca ))|(_ff >>uint (_cbfb ));

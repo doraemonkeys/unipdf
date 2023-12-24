@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package arithmetic ;import (_ad "bytes";_ac "github.com/unidoc/unipdf/v3/common";_da "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_e "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_d "io";);func (_ecf *Encoder )emit (){if _ecf ._bb ==_ced {_ecf ._eag =append (_ecf ._eag ,_ecf ._fa );
+package arithmetic ;import (_ad "bytes";_ac "github.com/doraemonkeys/unipdf/v3/common";_da "github.com/doraemonkeys/unipdf/v3/internal/jbig2/bitmap";_e "github.com/doraemonkeys/unipdf/v3/internal/jbig2/errors";_d "io";);func (_ecf *Encoder )emit (){if _ecf ._bb ==_ced {_ecf ._eag =append (_ecf ._eag ,_ecf ._fa );
 _ecf ._fa =make ([]byte ,_ced );_ecf ._bb =0;};_ecf ._fa [_ecf ._bb ]=_ecf ._bcb ;_ecf ._bb ++;};func (_dd *codingContext )mps (_acf uint32 )int {return int (_dd ._ag [_acf ])};const (IAAI Class =iota ;IADH ;IADS ;IADT ;IADW ;IAEX ;IAFS ;IAIT ;IARDH ;IARDW ;
 IARDX ;IARDY ;IARI ;);type codingContext struct{_fc []byte ;_ag []byte ;};func (_eg *Encoder )Refine (iTemp ,iTarget *_da .Bitmap ,ox ,oy int )error {for _fad :=0;_fad < iTarget .Height ;_fad ++{var _bf int ;_bgb :=_fad +oy ;var (_bgf ,_cfg ,_ggb ,_fdb ,_fada uint16 ;
 _cgc ,_dde ,_cdc ,_dfa ,_gc byte ;);if _bgb >=1&&(_bgb -1)< iTemp .Height {_cgc =iTemp .Data [(_bgb -1)*iTemp .RowStride ];};if _bgb >=0&&_bgb < iTemp .Height {_dde =iTemp .Data [_bgb *iTemp .RowStride ];};if _bgb >=-1&&_bgb +1< iTemp .Height {_cdc =iTemp .Data [(_bgb +1)*iTemp .RowStride ];

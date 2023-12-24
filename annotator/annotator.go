@@ -14,8 +14,8 @@
 // can create the appearance streams which specify the exact appearance as needed by many pdf viewers for consistent
 // appearance of the annotations.
 // It also contains methods for generating appearance streams for fields via widget annotations.
-package annotator ;import (_f "bytes";_ff "errors";_e "github.com/unidoc/unipdf/v3/common";_fc "github.com/unidoc/unipdf/v3/contentstream";_fb "github.com/unidoc/unipdf/v3/contentstream/draw";_gf "github.com/unidoc/unipdf/v3/core";_gb "github.com/unidoc/unipdf/v3/internal/textencoding";
-_bc "github.com/unidoc/unipdf/v3/model";_eg "image";_fd "math";_bg "strings";_b "unicode";);
+package annotator ;import (_f "bytes";_ff "errors";_e "github.com/doraemonkeys/unipdf/v3/common";_fc "github.com/doraemonkeys/unipdf/v3/contentstream";_fb "github.com/doraemonkeys/unipdf/v3/contentstream/draw";_gf "github.com/doraemonkeys/unipdf/v3/core";_gb "github.com/doraemonkeys/unipdf/v3/internal/textencoding";
+_bc "github.com/doraemonkeys/unipdf/v3/model";_eg "image";_fd "math";_bg "strings";_b "unicode";);
 
 // GenerateAppearanceDict generates an appearance dictionary for widget annotation `wa` for the `field` in `form`.
 // Implements interface model.FieldAppearanceGenerator.

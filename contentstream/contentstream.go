@@ -20,8 +20,8 @@
 // be converted to a string for embedding in a PDF file.
 //
 // The contentstream package uses the core and model packages.
-package contentstream ;import (_ee "bufio";_ec "bytes";_e "encoding/hex";_f "errors";_db "fmt";_ecg "github.com/unidoc/unipdf/v3/common";_ea "github.com/unidoc/unipdf/v3/core";_eeg "github.com/unidoc/unipdf/v3/internal/imageutil";_eg "github.com/unidoc/unipdf/v3/internal/transform";
-_ge "github.com/unidoc/unipdf/v3/model";_b "image/color";_fff "image/jpeg";_g "io";_gc "math";_d "regexp";_ff "strconv";);func (_gbe *ContentStreamParser )parseOperand ()(*_ea .PdfObjectString ,error ){var _cbcd []byte ;for {_dagg ,_eceg :=_gbe ._edbd .Peek (1);
+package contentstream ;import (_ee "bufio";_ec "bytes";_e "encoding/hex";_f "errors";_db "fmt";_ecg "github.com/doraemonkeys/unipdf/v3/common";_ea "github.com/doraemonkeys/unipdf/v3/core";_eeg "github.com/doraemonkeys/unipdf/v3/internal/imageutil";_eg "github.com/doraemonkeys/unipdf/v3/internal/transform";
+_ge "github.com/doraemonkeys/unipdf/v3/model";_b "image/color";_fff "image/jpeg";_g "io";_gc "math";_d "regexp";_ff "strconv";);func (_gbe *ContentStreamParser )parseOperand ()(*_ea .PdfObjectString ,error ){var _cbcd []byte ;for {_dagg ,_eceg :=_gbe ._edbd .Peek (1);
 if _eceg !=nil {return _ea .MakeString (string (_cbcd )),_eceg ;};if _ea .IsDelimiter (_dagg [0]){break ;};if _ea .IsWhiteSpace (_dagg [0]){break ;};_dbdg ,_ :=_gbe ._edbd .ReadByte ();_cbcd =append (_cbcd ,_dbdg );};return _ea .MakeString (string (_cbcd )),nil ;
 };
 

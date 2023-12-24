@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imagerender ;import (_ag "errors";_ae "fmt";_gf "github.com/unidoc/freetype/raster";_cf "github.com/unidoc/unipdf/v3/common";_gg "github.com/unidoc/unipdf/v3/internal/transform";_cff "github.com/unidoc/unipdf/v3/render/internal/context";_ca "golang.org/x/image/draw";
+package imagerender ;import (_ag "errors";_ae "fmt";_gf "github.com/unidoc/freetype/raster";_cf "github.com/doraemonkeys/unipdf/v3/common";_gg "github.com/doraemonkeys/unipdf/v3/internal/transform";_cff "github.com/doraemonkeys/unipdf/v3/render/internal/context";_ca "golang.org/x/image/draw";
 _ad "golang.org/x/image/font";_fg "golang.org/x/image/math/f64";_d "golang.org/x/image/math/fixed";_ee "image";_g "image/color";_e "image/draw";_f "math";_c "sort";_a "strings";);func NewContextForImage (im _ee .Image )*Context {return NewContextForRGBA (_ecag (im ))};
 func (_bba *Context )SetFillRule (fillRule _cff .FillRule ){_bba ._dfb =fillRule };func _acaa (_aaab _gf .Path ,_ffac []float64 ,_aebb float64 )_gf .Path {return _gfb (_fgfa (_aac (_aaab ),_ffac ,_aebb ));};func (_ggc *Context )SetFillStyle (pattern _cff .Pattern ){if _bag ,_cae :=pattern .(*solidPattern );
 _cae {_ggc ._caa =_bag ._adb ;};_ggc ._dga =pattern ;};func (_bcd *Context )Identity (){_bcd ._ff =_gg .IdentityMatrix ()};func (_gba *Context )Width ()int {return _gba ._bdb };func (_fge *Context )ClearPath (){_fge ._fbbb .Clear ();_fge ._bfe .Clear ();

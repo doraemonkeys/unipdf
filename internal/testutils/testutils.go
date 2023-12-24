@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package testutils ;import (_b "crypto/md5";_eb "encoding/hex";_f "errors";_bb "fmt";_a "github.com/unidoc/unipdf/v3/common";_ee "github.com/unidoc/unipdf/v3/core";_gb "image";_e "image/png";_dc "io";_gfe "os";_gg "os/exec";_d "path/filepath";_gf "strings";
+package testutils ;import (_b "crypto/md5";_eb "encoding/hex";_f "errors";_bb "fmt";_a "github.com/doraemonkeys/unipdf/v3/common";_ee "github.com/doraemonkeys/unipdf/v3/core";_gb "image";_e "image/png";_dc "io";_gfe "os";_gg "os/exec";_d "path/filepath";_gf "strings";
 _g "testing";);func CompareImages (img1 ,img2 _gb .Image )(bool ,error ){_fe :=img1 .Bounds ();_gbb :=0;for _ec :=0;_ec < _fe .Size ().X ;_ec ++{for _ffg :=0;_ffg < _fe .Size ().Y ;_ffg ++{_dcf ,_fc ,_bbb ,_ :=img1 .At (_ec ,_ffg ).RGBA ();_dg ,_ab ,_be ,_ :=img2 .At (_ec ,_ffg ).RGBA ();
 if _dcf !=_dg ||_fc !=_ab ||_bbb !=_be {_gbb ++;};};};_cgb :=float64 (_gbb )/float64 (_fe .Dx ()*_fe .Dy ());if _cgb > 0.0001{_bb .Printf ("\u0064\u0069\u0066f \u0066\u0072\u0061\u0063\u0074\u0069\u006f\u006e\u003a\u0020\u0025\u0076\u0020\u0028\u0025\u0064\u0029\u000a",_cgb ,_gbb );
 return false ,nil ;};return true ,nil ;};func CompareDictionariesDeep (d1 ,d2 *_ee .PdfObjectDictionary )bool {if len (d1 .Keys ())!=len (d2 .Keys ()){_a .Log .Debug ("\u0044\u0069\u0063\u0074\u0020\u0065\u006e\u0074\u0072\u0069\u0065\u0073\u0020\u006d\u0069s\u006da\u0074\u0063\u0068\u0020\u0028\u0025\u0064\u0020\u0021\u003d\u0020\u0025\u0064\u0029",len (d1 .Keys ()),len (d2 .Keys ()));

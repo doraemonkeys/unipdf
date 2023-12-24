@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package pdfaid ;import (_gd "fmt";_e "github.com/trimmer-io/go-xmp/xmp";_b "github.com/unidoc/unipdf/v3/model/xmputil/pdfaextension";);
+package pdfaid ;import (_gd "fmt";_e "github.com/trimmer-io/go-xmp/xmp";_b "github.com/doraemonkeys/unipdf/v3/model/xmputil/pdfaextension";);
 
 // Namespaces implements xmp.Model interface.
 func (_gdb *Model )Namespaces ()_e .NamespaceList {return _e .NamespaceList {Namespace }};func init (){_e .Register (Namespace ,_e .XmpMetadata );_b .RegisterSchema (Namespace ,&Schema )};

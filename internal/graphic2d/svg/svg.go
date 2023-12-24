@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package svg ;import (_e "encoding/xml";_g "fmt";_dg "github.com/unidoc/unipdf/v3/common";_cbf "github.com/unidoc/unipdf/v3/contentstream";_cb "github.com/unidoc/unipdf/v3/contentstream/draw";_cg "github.com/unidoc/unipdf/v3/internal/graphic2d";_ce "golang.org/x/net/html/charset";
+package svg ;import (_e "encoding/xml";_g "fmt";_dg "github.com/doraemonkeys/unipdf/v3/common";_cbf "github.com/doraemonkeys/unipdf/v3/contentstream";_cb "github.com/doraemonkeys/unipdf/v3/contentstream/draw";_cg "github.com/doraemonkeys/unipdf/v3/internal/graphic2d";_ce "golang.org/x/net/html/charset";
 _ge "io";_gg "math";_fb "os";_f "strconv";_d "strings";_cc "unicode";);func (_gcd *GraphicSVG )toContentStream (_dda *_cbf .ContentCreator ){_bee ,_eeda :=_gbga (_gcd .Attributes ,_gcd ._gggf );if _eeda !=nil {_dg .Log .Debug ("U\u006e\u0061\u0062\u006c\u0065\u0020t\u006f\u0020\u0070\u0061\u0072\u0073e\u0020\u0073\u0074\u0079\u006c\u0065\u0020a\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065\u003a\u0020%\u0076",_eeda );
 };_gcd .Style =_bee ;switch _gcd .Name {case "\u0070\u0061\u0074\u0068":_b (_gcd ,_dda );for _ ,_agb :=range _gcd .Children {_agb .toContentStream (_dda );};case "\u0072\u0065\u0063\u0074":_gea (_gcd ,_dda );for _ ,_gda :=range _gcd .Children {_gda .toContentStream (_dda );
 };case "\u0063\u0069\u0072\u0063\u006c\u0065":_aed (_gcd ,_dda );for _ ,_ded :=range _gcd .Children {_ded .toContentStream (_dda );};case "\u0065l\u006c\u0069\u0070\u0073\u0065":_edgg (_gcd ,_dda );for _ ,_ggag :=range _gcd .Children {_ggag .toContentStream (_dda );

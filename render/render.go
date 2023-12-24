@@ -9,8 +9,8 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package render ;import (_a "errors";_be "fmt";_da "github.com/adrg/sysfont";_gg "github.com/unidoc/unipdf/v3/annotator";_e "github.com/unidoc/unipdf/v3/common";_df "github.com/unidoc/unipdf/v3/contentstream";_aab "github.com/unidoc/unipdf/v3/contentstream/draw";
-_fc "github.com/unidoc/unipdf/v3/core";_ce "github.com/unidoc/unipdf/v3/internal/license";_ca "github.com/unidoc/unipdf/v3/internal/transform";_ab "github.com/unidoc/unipdf/v3/model";_cb "github.com/unidoc/unipdf/v3/render/internal/context";_beb "github.com/unidoc/unipdf/v3/render/internal/context/imagerender";
+package render ;import (_a "errors";_be "fmt";_da "github.com/adrg/sysfont";_gg "github.com/doraemonkeys/unipdf/v3/annotator";_e "github.com/doraemonkeys/unipdf/v3/common";_df "github.com/doraemonkeys/unipdf/v3/contentstream";_aab "github.com/doraemonkeys/unipdf/v3/contentstream/draw";
+_fc "github.com/doraemonkeys/unipdf/v3/core";_ce "github.com/doraemonkeys/unipdf/v3/internal/license";_ca "github.com/doraemonkeys/unipdf/v3/internal/transform";_ab "github.com/doraemonkeys/unipdf/v3/model";_cb "github.com/doraemonkeys/unipdf/v3/render/internal/context";_beb "github.com/doraemonkeys/unipdf/v3/render/internal/context/imagerender";
 _cf "golang.org/x/image/draw";_gb "image";_bb "image/color";_f "image/draw";_aa "image/jpeg";_b "image/png";_c "math";_gf "os";_af "path/filepath";_d "strings";);const (ShadingTypeFunctionBased PdfShadingType =1;ShadingTypeAxial PdfShadingType =2;ShadingTypeRadial PdfShadingType =3;
 ShadingTypeFreeForm PdfShadingType =4;ShadingTypeLatticeForm PdfShadingType =5;ShadingTypeCoons PdfShadingType =6;ShadingTypeTensorProduct PdfShadingType =7;);
 

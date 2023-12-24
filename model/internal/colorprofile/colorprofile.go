@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package colorprofile ;import (_ca "bytes";_ac "compress/gzip";_e "encoding/hex";_ff "errors";_fb "fmt";_ae "github.com/unidoc/unipdf/v3/model";_caa "io";_cb "io/ioutil";_fc "os";_b "path/filepath";_f "strconv";_a "strings";_fa "time";);func MustAsset (name string )[]byte {_bdg ,_gaf :=Asset (name );
+package colorprofile ;import (_ca "bytes";_ac "compress/gzip";_e "encoding/hex";_ff "errors";_fb "fmt";_ae "github.com/doraemonkeys/unipdf/v3/model";_caa "io";_cb "io/ioutil";_fc "os";_b "path/filepath";_f "strconv";_a "strings";_fa "time";);func MustAsset (name string )[]byte {_bdg ,_gaf :=Asset (name );
 if _gaf !=nil {panic ("\u0061\u0073\u0073\u0065\u0074\u003a\u0020\u0041\u0073\u0073\u0065\u0074\u0028"+name +"\u0029\u003a\u0020"+_gaf .Error ());};return _bdg ;};func AssetNames ()[]string {_cbf :=make ([]string ,0,len (_dad ));for _bbf :=range _dad {_cbf =append (_cbf ,_bbf );
 };return _cbf ;};func (_fbe bindataFileInfo )Name ()string {return _fbe ._gf };func (_cagf bindataFileInfo )ModTime ()_fa .Time {return _cagf ._ge };func (_bb bindataFileInfo )Sys ()interface{}{return nil };const (DeviceClassUndefined DeviceClass =iota ;
 DeviceClassSCNR ;DeviceClassMNTR ;DeviceClassPRTR ;DeviceClassLINK ;DeviceClassSPAC ;DeviceClassABST ;DeviceClassNMCL ;);func _aef ()([]byte ,error ){return _ec (_gg ,"I\u0053\u004f\u0063\u006f\u0061\u0074e\u0064\u005f\u0076\u0032\u005f\u0067\u0072\u0065\u00791\u0063\u005f\u0062a\u0073.\u0069\u0063\u0063");

@@ -10,7 +10,7 @@
 // terms that can be accessed at https://unidoc.io/eula/
 
 // Package fjson provides support for loading PDF form field data from JSON data/files.
-package fjson ;import (_b "encoding/json";_f "github.com/unidoc/unipdf/v3/common";_eg "github.com/unidoc/unipdf/v3/core";_df "github.com/unidoc/unipdf/v3/model";_d "io";_e "os";);type fieldValue struct{Name string `json:"name"`;Value string `json:"value"`;
+package fjson ;import (_b "encoding/json";_f "github.com/doraemonkeys/unipdf/v3/common";_eg "github.com/doraemonkeys/unipdf/v3/core";_df "github.com/doraemonkeys/unipdf/v3/model";_d "io";_e "os";);type fieldValue struct{Name string `json:"name"`;Value string `json:"value"`;
 ImageValue *_df .Image `json:"-"`;
 
 // Options lists allowed values if present.

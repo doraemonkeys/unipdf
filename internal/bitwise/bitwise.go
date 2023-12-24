@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package bitwise ;import (_b "encoding/binary";_a "errors";_ea "fmt";_d "github.com/unidoc/unipdf/v3/common";_g "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_eb "io";);func (_ccb *BufferedWriter )grow (_ca int ){if _ccb ._c ==nil &&_ca < _ed {_ccb ._c =make ([]byte ,_ca ,_ed );
+package bitwise ;import (_b "encoding/binary";_a "errors";_ea "fmt";_d "github.com/doraemonkeys/unipdf/v3/common";_g "github.com/doraemonkeys/unipdf/v3/internal/jbig2/errors";_eb "io";);func (_ccb *BufferedWriter )grow (_ca int ){if _ccb ._c ==nil &&_ca < _ed {_ccb ._c =make ([]byte ,_ca ,_ed );
 return ;};_db :=len (_ccb ._c );if _ccb ._da !=0{_db ++;};_af :=cap (_ccb ._c );switch {case _ca <=_af /2-_db :_d .Log .Trace ("\u005b\u0042\u0075\u0066\u0066\u0065r\u0065\u0064\u0057\u0072\u0069t\u0065\u0072\u005d\u0020\u0067\u0072o\u0077\u0020\u002d\u0020\u0072e\u0073\u006c\u0069\u0063\u0065\u0020\u006f\u006e\u006c\u0079\u002e\u0020L\u0065\u006e\u003a\u0020\u0027\u0025\u0064\u0027\u002c\u0020\u0043\u0061\u0070\u003a\u0020'\u0025\u0064\u0027\u002c\u0020\u006e\u003a\u0020'\u0025\u0064\u0027",len (_ccb ._c ),cap (_ccb ._c ),_ca );
 _d .Log .Trace ("\u0020\u006e\u0020\u003c\u003d\u0020\u0063\u0020\u002f\u0020\u0032\u0020\u002d\u006d\u002e \u0043:\u0020\u0027\u0025\u0064\u0027\u002c\u0020\u006d\u003a\u0020\u0027\u0025\u0064\u0027",_af ,_db );copy (_ccb ._c ,_ccb ._c [_ccb .fullOffset ():]);
 case _af > _aa -_af -_ca :_d .Log .Error ("\u0042\u0055F\u0046\u0045\u0052 \u0074\u006f\u006f\u0020\u006c\u0061\u0072\u0067\u0065");return ;default:_geb :=make ([]byte ,2*_af +_ca );copy (_geb ,_ccb ._c );_ccb ._c =_geb ;};_ccb ._c =_ccb ._c [:_db +_ca ];

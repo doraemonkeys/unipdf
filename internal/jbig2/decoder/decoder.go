@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package decoder ;import (_c "github.com/unidoc/unipdf/v3/internal/bitwise";_d "github.com/unidoc/unipdf/v3/internal/jbig2/bitmap";_cc "github.com/unidoc/unipdf/v3/internal/jbig2/document";_aa "github.com/unidoc/unipdf/v3/internal/jbig2/errors";_g "image";
+package decoder ;import (_c "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_d "github.com/doraemonkeys/unipdf/v3/internal/jbig2/bitmap";_cc "github.com/doraemonkeys/unipdf/v3/internal/jbig2/document";_aa "github.com/doraemonkeys/unipdf/v3/internal/jbig2/errors";_g "image";
 );type Decoder struct{_aac *_c .Reader ;_f *_cc .Document ;_fd int ;_ce Parameters ;};func (_gb *Decoder )DecodePageImage (pageNumber int )(_g .Image ,error ){const _gf ="\u0064\u0065\u0063od\u0065\u0072\u002e\u0044\u0065\u0063\u006f\u0064\u0065\u0050\u0061\u0067\u0065\u0049\u006d\u0061\u0067\u0065";
 _af ,_ac :=_gb .decodePageImage (pageNumber );if _ac !=nil {return nil ,_aa .Wrap (_ac ,_gf ,"");};return _af ,nil ;};func (_fc *Decoder )DecodeNextPage ()([]byte ,error ){_fc ._fd ++;_df :=_fc ._fd ;return _fc .decodePage (_df );};type Parameters struct{UnpaddedData bool ;
 Color _d .Color ;};func (_bgf *Decoder )decodePageImage (_e int )(_g .Image ,error ){const _ag ="\u0064e\u0063o\u0064\u0065\u0050\u0061\u0067\u0065\u0049\u006d\u0061\u0067\u0065";if _e < 0{return nil ,_aa .Errorf (_ag ,"\u0069n\u0076\u0061\u006c\u0069d\u0020\u0070\u0061\u0067\u0065 \u006eu\u006db\u0065\u0072\u003a\u0020\u0027\u0025\u0064'",_e );

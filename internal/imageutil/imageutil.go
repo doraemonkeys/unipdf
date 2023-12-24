@@ -9,7 +9,7 @@
 // Use of this source code is governed by the UniDoc End User License Agreement
 // terms that can be accessed at https://unidoc.io/eula/
 
-package imageutil ;import (_ab "encoding/binary";_d "errors";_dcg "fmt";_c "github.com/unidoc/unipdf/v3/common";_g "github.com/unidoc/unipdf/v3/internal/bitwise";_dc "image";_de "image/color";_fe "image/draw";_a "math";);func (_egad *Gray8 )Base ()*ImageBase {return &_egad .ImageBase };
+package imageutil ;import (_ab "encoding/binary";_d "errors";_dcg "fmt";_c "github.com/doraemonkeys/unipdf/v3/common";_g "github.com/doraemonkeys/unipdf/v3/internal/bitwise";_dc "image";_de "image/color";_fe "image/draw";_a "math";);func (_egad *Gray8 )Base ()*ImageBase {return &_egad .ImageBase };
 func _cag (_bggc _de .NRGBA )_de .Gray {var _gcaf _de .NRGBA ;if _bggc ==_gcaf {return _de .Gray {Y :0xff};};_adda ,_eeg ,_fcb ,_ :=_bggc .RGBA ();_ddcg :=(19595*_adda +38470*_eeg +7471*_fcb +1<<15)>>24;return _de .Gray {Y :uint8 (_ddcg )};};type CMYK interface{CMYKAt (_befc ,_gbg int )_de .CMYK ;
 SetCMYK (_dgdb ,_aab int ,_dae _de .CMYK );};var (_bffa =[]byte {0x00,0x80,0xC0,0xE0,0xF0,0xF8,0xFC,0xFE,0xFF};_febf =[]byte {0x00,0x01,0x03,0x07,0x0F,0x1F,0x3F,0x7F,0xFF};);func (_ddcb *RGBA32 )Bounds ()_dc .Rectangle {return _dc .Rectangle {Max :_dc .Point {X :_ddcb .Width ,Y :_ddcb .Height }};
 };func (_aeg *Monochrome )getBit (_ddca ,_ggdg int )uint8 {return _aeg .Data [_ddca +(_ggdg >>3)]>>uint (7-(_ggdg &7))&1;};func _bacd (_gdcd *Monochrome ,_affcf ,_gggfa ,_baeb ,_eecf int ,_gead RasterOperator ,_bedd *Monochrome ,_acgd ,_abga int )error {if _gdcd ==nil {return _d .New ("\u006e\u0069\u006c\u0020\u0027\u0064\u0065\u0073\u0074\u0027\u0020\u0042i\u0074\u006d\u0061\u0070");

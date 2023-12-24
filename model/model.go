@@ -37,10 +37,10 @@
 //	fmt.Printf("The PDF file has %d pages\n", numPages)
 //
 // For more examples, see the unidoc-examples repository on GitHub: https://github.com/unidoc/unidoc-examples
-package model ;import (_ag "bufio";_af "bytes";_ff "crypto/md5";_ed "crypto/rand";_be "crypto/sha1";_fb "crypto/x509";_d "encoding/binary";_fe "encoding/hex";_g "errors";_e "fmt";_feg "github.com/unidoc/pkcs7";_adg "github.com/unidoc/unipdf/v3/common";
-_aff "github.com/unidoc/unipdf/v3/core";_eec "github.com/unidoc/unipdf/v3/core/security";_aa "github.com/unidoc/unipdf/v3/core/security/crypt";_da "github.com/unidoc/unipdf/v3/internal/cmap";_gd "github.com/unidoc/unipdf/v3/internal/imageutil";_gff "github.com/unidoc/unipdf/v3/internal/license";
-_aae "github.com/unidoc/unipdf/v3/internal/sampling";_eee "github.com/unidoc/unipdf/v3/internal/textencoding";_cd "github.com/unidoc/unipdf/v3/internal/timeutils";_eb "github.com/unidoc/unipdf/v3/internal/transform";_bb "github.com/unidoc/unipdf/v3/model/internal/docutil";
-_bcd "github.com/unidoc/unipdf/v3/model/internal/fonts";_gf "github.com/unidoc/unipdf/v3/model/mdp";_bfd "github.com/unidoc/unipdf/v3/model/sigutil";_bf "github.com/unidoc/unipdf/v3/ps";_fga "github.com/unidoc/unitype";_ffb "golang.org/x/xerrors";_c "hash";
+package model ;import (_ag "bufio";_af "bytes";_ff "crypto/md5";_ed "crypto/rand";_be "crypto/sha1";_fb "crypto/x509";_d "encoding/binary";_fe "encoding/hex";_g "errors";_e "fmt";_feg "github.com/unidoc/pkcs7";_adg "github.com/doraemonkeys/unipdf/v3/common";
+_aff "github.com/doraemonkeys/unipdf/v3/core";_eec "github.com/doraemonkeys/unipdf/v3/core/security";_aa "github.com/doraemonkeys/unipdf/v3/core/security/crypt";_da "github.com/doraemonkeys/unipdf/v3/internal/cmap";_gd "github.com/doraemonkeys/unipdf/v3/internal/imageutil";_gff "github.com/doraemonkeys/unipdf/v3/internal/license";
+_aae "github.com/doraemonkeys/unipdf/v3/internal/sampling";_eee "github.com/doraemonkeys/unipdf/v3/internal/textencoding";_cd "github.com/doraemonkeys/unipdf/v3/internal/timeutils";_eb "github.com/doraemonkeys/unipdf/v3/internal/transform";_bb "github.com/doraemonkeys/unipdf/v3/model/internal/docutil";
+_bcd "github.com/doraemonkeys/unipdf/v3/model/internal/fonts";_gf "github.com/doraemonkeys/unipdf/v3/model/mdp";_bfd "github.com/doraemonkeys/unipdf/v3/model/sigutil";_bf "github.com/doraemonkeys/unipdf/v3/ps";_fga "github.com/unidoc/unitype";_ffb "golang.org/x/xerrors";_c "hash";
 _cg "image";_bc "image/color";_ "image/gif";_ "image/png";_ega "io";_ad "io/ioutil";_cf "math";_ffe "math/rand";_db "os";_bd "regexp";_fg "sort";_eed "strconv";_ba "strings";_b "sync";_f "time";_ee "unicode";_eg "unicode/utf8";);
 
 // PdfAnnotationLine represents Line annotations.
